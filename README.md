@@ -19,3 +19,4 @@
 * `<img src="./img/white.png">`
 * `img.src;` white 이미지 읽기
 * `img.src = "./img/black.png";` white에 black을 대입 
+----
