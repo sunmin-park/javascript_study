@@ -1,0 +1,61 @@
+/* header */
+header{
+    background: #f1f1f1;
+    max-width: 1024px; margin: 0 auto;
+}
+header .top{line-height: 30px; text-align: right;}
+header .top a{font-size: 0.81rem;}
+/* header-nav */
+header .btm{
+    height: 100px; display: flex;
+    justify-content: space-between; align-items: center;
+}
+header .btm h1{}
+header .btm h1 a{}
+header .btm h1 a img{}
+header .btm nav{}
+header .btm nav .gnb{display:flex;}
+header .btm nav .gnb > li{position: relative;}
+header .btm nav .gnb > li > a{
+    font-size: 1.25rem; font-weight: 700; margin-right: 100px;
+}
+header .btm nav .gnb > li:last-child a{margin:0}
+header .btm nav .gnb > li > .sub{
+    background: rgba(255, 255, 0, 0.15); height: 150px;
+    position: absolute; width: 100%;
+    padding-top: 10px;
+}
+header .btm nav .gnb > li > .sub li{}
+header .btm nav .gnb > li > .sub li a{}
+/* header-m_nav */
+header .btm #m_nav{display: none;}
+header .btm .m_nav_wrap{
+    display: none;
+    position: fixed; right: 0; top: 0; z-index: 900;}
+header .btm .m_nav_wrap .m_nav_close{
+    position: absolute; right: 20px; top: 20px; z-index: 999;
+    font-size: 1.30rem; font-weight: 700; color: #ff0;
+}
+header .btm .m_nav_wrap .gnb{
+    background: rgba(0, 0, 0, 0.5);
+    width: 50vw; height: 100vh; padding: 30px 0 0 30px;
+}
+/* clone */
+header .btm .m_nav_wrap .gnb{}
+header .btm .m_nav_wrap .gnb > li{}
+header .btm .m_nav_wrap .gnb > li > a{
+    font-size: 1.25rem; font-weight: 700; color: #fff;
+}
+header .btm .m_nav_wrap .gnb > li > .sub{margin: 0 0 20px;}
+header .btm .m_nav_wrap .gnb > li > .sub li{}
+header .btm .m_nav_wrap .gnb > li > .sub li a{
+    letter-spacing: -2%; line-height: 1.7; color: #fff;
+}
+/* 메뉴 반응형 */
+/* 가로 1024 이하일 시 PC메뉴는 숨기고 mobile 메뉴 보이기 */
+@media screen and (max-width:1024px){
+    header .btm nav{display: none;}
+    header .btm #m_nav{display: block;}
+    header .btm .m_nav_wrap{display: block;}
+}
+
